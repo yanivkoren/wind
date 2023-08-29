@@ -1,65 +1,36 @@
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    overflow: hidden;
-    margin: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif; /* You can use a Hebrew font if you have one. */
+  overflow: hidden; /* Prevent default scrolling */
 }
 
 .container {
-    display: flex;
-    overflow-x: hidden;
-    width: 100vw;
-    scroll-snap-type: x mandatory;
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
 }
 
 .block {
-    min-width: 100vw;
-    scroll-snap-align: start;
-    margin: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 5px;
+  flex: 0 0 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
+.subdiv {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #007BFF;
-    color: white;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-.button-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-#buttonContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+h2 {
+  margin-top: 0;
 }
