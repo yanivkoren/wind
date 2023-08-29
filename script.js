@@ -1,29 +1,18 @@
-let startX;
-let currentBlockIndex = 0;
-const blocks = document.querySelectorAll('.block');
-const container = document.querySelector('.container');
+let start = null;
+const container = document.getElementById('tableContainer');
 
-document.addEventListener('touchstart', (event) => {
-    startX = event.touches[0].clientX;
-}, { passive: false }); // added passive: false
+container.addEventListener('touchstart', (e) => {
+    start = e.touches[0].pageX;
+}, false);
 
-document.addEventListener('touchmove', (event) => {
-    event.preventDefault(); // prevent default scrolling behavior during swipe
-}, { passive: false }); // added passive: false
+container.addEventListener('touchmove', (e) => {
+    if (!start) return;
 
-document.addEventListener('touchend', (event) => {
-    let endX = event.changedTouches[0].clientX;
-    let deltaX = startX - endX;
+    let end = e.touches[0].pageX;
+    let distance = start - end;
 
-    // Swipe right (show next block)
-    if (deltaX > 50 && currentBlockIndex < blocks.length - 1) {
-        currentBlockIndex++;
+    if (Math.abs(distance) > 50) {
+        container.scrollBy({ left: distance > 0 ? window.innerWidth : -window.innerWidth, behavior: 'smooth' });
+        start = null;
     }
-    // Swipe left (show previous block)
-    else if (deltaX < -50 && currentBlockIndex > 0) {
-        currentBlockIndex--;
-    }
-
-    // Scroll to the relevant block
-    container.scrollLeft = window.innerWidth * currentBlockIndex;
-});
+}, false);
