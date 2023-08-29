@@ -1,36 +1,35 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", sans-serif; /* You can use a Hebrew font if you have one. */
-  overflow: hidden; /* Prevent default scrolling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* You can use a Hebrew font if you have one. */
+    overflow: hidden; /* Prevent default scrolling */
 }
 
 .container {
-  display: flex;
-  overflow-x: scroll;
-  width: 100vw;
-  height: 100vh;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
+    display: flex;
+    overflow-x: scroll;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
 }
 
 .block {
-  flex: 0 0 100vw;
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    flex: 0 0 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .subdiv {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }
 
 h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
