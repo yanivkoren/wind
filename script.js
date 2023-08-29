@@ -5,7 +5,11 @@ const container = document.querySelector('.container');
 
 document.addEventListener('touchstart', (event) => {
     startX = event.touches[0].clientX;
-});
+}, { passive: false }); // added passive: false
+
+document.addEventListener('touchmove', (event) => {
+    event.preventDefault(); // prevent default scrolling behavior during swipe
+}, { passive: false }); // added passive: false
 
 document.addEventListener('touchend', (event) => {
     let endX = event.changedTouches[0].clientX;
