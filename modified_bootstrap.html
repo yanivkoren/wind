@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><!-- Page_Title_PLACEHOLDER --></title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles for green carousel controls and indicators */
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 128, 0, 0.5);
+        }
+
+        .carousel-indicators li {
+            background-color: rgba(0, 128, 0, 0.5);
+        }
+
+        .carousel-indicators .active {
+            background-color: rgba(0, 128, 0, 1);
+        }
+
+        /* Custom styles for placing carousel indicators on top */
+        .carousel-indicators-top {
+            bottom: auto;
+            /* Reset the default bottom position */
+            top: 0;
+            /* Set the top position */
+            z-index: 2;
+            /* Ensure indicators are above the slides */
+        }
+
+        .carousel-content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        .table.table-bordered.text-right {
+            width: 100%;
+        }
+
+        /* 
+   .table-compact class targeting the <td> and <th> elements:
+   - Reduces the padding inside the table cells and headers to make the table more compact.
+   - The first value (12px) is for top and bottom padding.
+   - The second value (1px) is for left and right padding.
+*/
+        .table-compact td,
+        .table-compact th {
+            padding: 12px 1px;
+        }
+
+        /* Center content of all <td> elements */
+        .table td {
+            text-align: center;
+        }
+
+        /* Override the previous rule for the first column */
+        .table td:first-child,
+        .table th:first-child {
+            text-align: right;
+            /* or 'left' or 'start' if you prefer */
+        }
+
+        /* Center content of all <th> elements */
+        .table th {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-interval="false">
+            <!-- Create a new div to wrap indicators and carousel content -->
+            <div class="carousel-content-wrapper">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators carousel-indicators-top">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ul>
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <!-- Block 1 with Random Text -->
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 text-right"
+                            style="background-color: white; height: 300px; padding: 15px;">
+<!-- block1_PLACEHOLDER -->
+🪁Laguna Bat Yam forecast:<br>
+🪁Friday 01/09<br>
+🪁00:25<br>
+
+Short Term Forecast.<br>
+
+Friday 01/09<br>
+🪁🪁בשעות 14-18 צפוייה רוח 10-11 קשר, עם גאסט 11-13 קשר, כיוון הרוח NW, NNW, גובה גל 0.6-0.7 ס"מ.<br>
+🪁בשעות 13 צפוייה רוח 8 קשר, עם גאסט 9 קשר, כיוון הרוח NW, גובה גל 0.6 ס"מ.<br>
+<br>
+Saturday 02/09<br>
+🪁🪁בשעות 15-17 צפוייה רוח 10 קשר, עם גאסט 10 קשר, כיוון הרוח WNW, NW, גובה גל 0.6 ס"מ.<br>
+🪁בשעות 13-14, 18 צפוייה רוח 8-9 קשר, עם גאסט 9-10 קשר, כיוון הרוח W, WNW, NW, גובה גל 0.6 ס"מ.<br>
+<br>
+Sunday 03/09<br>
+🪁🪁בשעות 14-17 צפוייה רוח 10 קשר, עם גאסט 10-11 קשר, כיוון הרוח WNW, NW, גובה גל 0.8 ס"מ.<br>
+🪁בשעות 12-13, 18 צפוייה רוח 8-9 קשר, עם גאסט 8-10 קשר, כיוון הרוח W, WNW, NW, גובה גל 0.7-0.8 ס"מ.<br>
+
+                        </div>
+                    </div>
+                    <!-- Blocks 2-4 with Bordered Tables -->
+                    <div class="carousel-item">
+                        <div class="d-block w-100 text-right" style="background-color: white; padding: 15px;">
+
+                            <h2>לגונה בת ים - תחזית לימים הקרובים לפי מודלים מקומיים</h2>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום חמישי 31/08</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>1</td>
+<td>3</td>
+<td>5</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+<td>8</td>
+</tr>
+<th>גאסט</th>
+<td>1</td>
+<td>3</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(165deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(287deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(295deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(299deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(300deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(308deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(312deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(322deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(332deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(344deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שישי 01/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>1</td>
+<td>2</td>
+<td>4</td>
+<td>6</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+<td>11</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<th>גאסט</th>
+<td>2</td>
+<td>2</td>
+<td>5</td>
+<td>7</td>
+<td>9</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>12</td>
+<td>12</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(222deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(269deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(292deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(310deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(311deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(322deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(324deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(329deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(336deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(344deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.7</td>
+<td>0.7</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שבת 02/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<th>גאסט</th>
+<td>4</td>
+<td>6</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(195deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(237deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(255deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(266deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(276deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(285deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(292deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(300deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(310deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(319deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.6</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום ראשון 03/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+<th>14</th>
+<th>15</th>
+<th>16</th>
+<th>17</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>7</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>9</td>
+</tr>
+<th>גאסט</th>
+<td>7</td>
+<td>7</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>11</td>
+<td>11</td>
+<td>10</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(198deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(227deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(258deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(276deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(288deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(299deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(307deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(314deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(319deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(324deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+<td>0.8</td>
+</tr>
+</table>
+<br>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-block w-100 text-right" style="background-color: white; padding: 15px;">
+                            <h2>לגונה בת ים - תחזית ארוכת טווח לפי מודלים גלובליים</h2>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שני 04/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>2</td>
+<td>7</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<th>גאסט</th>
+<td>1</td>
+<td>4</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(280deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(306deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(327deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(348deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שלישי 05/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>5</td>
+<td>8</td>
+<td>11</td>
+<td>11</td>
+</tr>
+<th>גאסט</th>
+<td>5</td>
+<td>6</td>
+<td>10</td>
+<td>12</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(34deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(334deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(341deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(355deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.6</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.6</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום רביעי 06/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>4</td>
+<td>9</td>
+<td>14</td>
+<td>16</td>
+</tr>
+<th>גאסט</th>
+<td>4</td>
+<td>8</td>
+<td>15</td>
+<td>20</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(35deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(341deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(351deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(5deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.4</td>
+<td>0.3</td>
+<td>0.5</td>
+<td>0.8</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום חמישי 07/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>8</td>
+<td>11</td>
+<td>13</td>
+<td>15</td>
+</tr>
+<th>גאסט</th>
+<td>10</td>
+<td>13</td>
+<td>16</td>
+<td>20</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(20deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(360deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(352deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(5deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.3</td>
+<td>0.4</td>
+<td>0.5</td>
+<td>0.6</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שישי 08/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>14</td>
+<td>12</td>
+<td>16</td>
+<td>18</td>
+</tr>
+<th>גאסט</th>
+<td>18</td>
+<td>12</td>
+<td>22</td>
+<td>29</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(4deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(354deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(354deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(4deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.9</td>
+<td>1.1</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שבת 09/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>7</td>
+<td>13</td>
+<td>15</td>
+<td>14</td>
+</tr>
+<th>גאסט</th>
+<td>11</td>
+<td>14</td>
+<td>20</td>
+<td>20</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(358deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(335deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(345deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(355deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.7</td>
+<td>0.7</td>
+<td>1.0</td>
+<td>1.1</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום ראשון 10/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>6</td>
+<td>9</td>
+<td>11</td>
+<td>10</td>
+</tr>
+<th>גאסט</th>
+<td>5</td>
+<td>7</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(322deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(305deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(314deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(311deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.9</td>
+<td>0.8</td>
+<td>0.9</td>
+<td>0.9</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שני 11/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>6</td>
+<td>9</td>
+<td>10</td>
+<td>8</td>
+</tr>
+<th>גאסט</th>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+<td>9</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(223deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(256deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(288deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(306deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.9</td>
+<td>0.9</td>
+<td>0.9</td>
+<td>0.9</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שלישי 12/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>3</td>
+<td>6</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<th>גאסט</th>
+<td>2</td>
+<td>5</td>
+<td>8</td>
+<td>10</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(258deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(284deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(313deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(336deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום רביעי 13/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>3</td>
+<td>8</td>
+<td>11</td>
+<td>10</td>
+</tr>
+<th>גאסט</th>
+<td>2</td>
+<td>6</td>
+<td>10</td>
+<td>11</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(292deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(294deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(308deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(330deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.6</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום חמישי 14/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>1</td>
+<td>8</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<th>גאסט</th>
+<td>2</td>
+<td>6</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(300deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(289deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(315deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(321deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שישי 15/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>3</td>
+<td>7</td>
+<td>9</td>
+<td>10</td>
+</tr>
+<th>גאסט</th>
+<td>4</td>
+<td>6</td>
+<td>9</td>
+<td>10</td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(213deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(286deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(307deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(325deg); vertical-align: middle; height: 1em;"></td>
+</tr>
+<th>גל</th>
+<td>0.4</td>
+<td>0.4</td>
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+</table>
+<br>
+<table class="table table-bordered text-right table-compact">
+<tr><th colspan='11'>יום שבת 16/09</th></tr>
+<tr> <th> </th>
+<th>09</th>
+<th>12</th>
+<th>15</th>
+<th>18</th>
+</tr>
+<th>רוח</th>
+<td>2</td>
+<td>6</td>
+<td>10</td>
+<td></td>
+</tr>
+<th>גאסט</th>
+<td>1</td>
+<td>5</td>
+<td>10</td>
+<td></td>
+</tr>
+<th>כיוון</th>
+<td><img src="down_arrow.png" style="transform: rotate(171deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(310deg); vertical-align: middle; height: 1em;"></td>
+<td><img src="down_arrow.png" style="transform: rotate(328deg); vertical-align: middle; height: 1em;"></td>
+<td></td>
+</tr>
+<th>גל</th>
+<td>0.5</td>
+<td>0.5</td>
+<td>0.6</td>
+<td></td>
+</tr>
+</table>
+<br>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-block w-100 text-right" style="background-color: white; padding: 15px;">
+                            <h2>רוח מקסימלית בכל ספוט</h2>
+<table class="table table-bordered text-right table-compact">
+<tr><th>Spot Name</th><th>31/08</th><th>01/09</th><th>02/09</th><th>03/09</th><th>04/09</th><th>05/09</th><th>06/09</th></tr>
+<tr><td>Eilat</td><td>15</td><td>18</td><td>21</td><td>20</td><td>7</td><td>8</td><td>13</td></tr>
+<tr><td>Beit Yannai</td><td>10</td><td>11</td><td>10</td><td>10</td><td>10</td><td>13</td><td>16</td></tr>
+<tr><td>Kiryat Yam</td><td>9</td><td>10</td><td>11</td><td>11</td><td>11</td><td>14</td><td>15</td></tr>
+<tr><td>Laguna Bat Yam</td><td>9</td><td>11</td><td>10</td><td>10</td><td>9</td><td>11</td><td>16</td></tr>
+</table>
+                        </div>
+                    </div>
+
+                    <!-- Block 5 with 9 Buttons -->
+                    <div class="carousel-item">
+                        <div class="d-block w-100 text-center" style="background-color: white; height: 300px; padding: 15px;">
+                            <h2>קישורים לדפי ספוטים</h2>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-success mb-2">כפתור 1</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success mb-2">כפתור 2</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success mb-2">כפתור 3</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-success mb-2">כפתור 4</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success mb-2">כפתור 5</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success mb-2">כפתור 6</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <button class="btn btn-outline-success">כפתור 7</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success">כפתור 8</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-outline-success">כפתור 9</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div><!-- Left and right controls (unchanged) -->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Add Bootstrap and jQuery JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<script>
+    <!-- chnge backgound color of numric tables cells -->
+
+    $(document).ready(function () {
+        $('table tbody td').each(function () {
+            var cellValue = $(this).text().trim();
+            var numberValue = parseFloat(cellValue);  // Convert the cell value to a number
+
+            // Check if the value is a number
+            if (!isNaN(numberValue)) {
+                if (numberValue <= 7) { $(this).css('background-color', 'white'); } 
+                else if (numberValue >= 8 && numberValue <= 9) { $(this).css('background-color', 'lightgreen'); } 
+                else if (numberValue >= 10 && numberValue <= 15) { $(this).css('background-color', 'mediumspringgreen'); } 
+                else if (numberValue >= 16 && numberValue <= 20) { $(this).css('background-color', 'lightsalmon'); } 
+                else if (numberValue >= 21 && numberValue <= 27) { $(this).css('background-color', 'moccasin');} 
+                else {$(this).css('background-color', 'lightcoral'); }
+            }
+        });
+    }); </script>
+
+</html><script>
+$(document).ready(function () {
+    $('.carousel').keydown(function (e) {
+        // Right Arrow Key
+        if (e.which == 39) {
+            $(this).carousel('prev');
+            return false;
+        }
+        // Left Arrow Key
+        else if (e.which == 37) {
+            $(this).carousel('next');
+            return false;
+        }
+    });
+});
+</script><script>
+$(document).ready(function () {
+    var touchStartX = null;
+
+    $('.carousel').on('touchstart', function (e) {
+        var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
+        touchStartX = touch.pageX;
+    }).on('touchmove', function (e) {
+        if (touchStartX === null) {
+            return;
+        }
+        
+        var touchCurrentX = (e.originalEvent.touches[0] || e.originalEvent.changedTouches[0]).pageX;
+        // Determine the direction of the swipe
+        if (touchCurrentX - touchStartX > 40) { // Right swipe
+            $(this).carousel('prev');
+            touchStartX = null;  // Reset
+        } else if (touchStartX - touchCurrentX > 40) { // Left swipe
+            $(this).carousel('next');
+            touchStartX = null;  // Reset
+        }
+    });
+});
+</script>
